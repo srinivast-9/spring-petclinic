@@ -5,7 +5,7 @@ pipeline{
 	stages{
 		stage('Checkout'){
 			steps{
-				git 'https://github.com/AnjuMeleth/spring-petclinic.git'
+				git branch: 'deploy', url: 'https://github.com/AnjuMeleth/spring-petclinic.git'
 			}
 		}
 		stage(' Build') {
